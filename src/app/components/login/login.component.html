@@ -1,0 +1,22 @@
+<div style="text-align:center">
+    <h1>
+        Welcome to NativeScript
+    </h1>
+    <div>
+        <form #locationForm="ngForm">
+            <div class="formComponent">
+                <label for="username">Username: </label>
+                <input type="text" [(ngModel)]="username" class="form-control" name="username" required>
+            </div>
+
+            <div class="formComponent">
+                <label for="password">Password: </label>
+                <input type="password" [(ngModel)]="password" class="form-control" name="password">
+            </div>
+
+
+        </form>
+        <button type="button" (click)="logIn()" class="formComponent">Login</button>
+        <Button class="formComponent" (click)="username='test'; password='pass'; logIn()">DEBUG LOGIN</Button>
+    </div>
+</div>

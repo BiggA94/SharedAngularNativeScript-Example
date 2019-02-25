@@ -1,0 +1,13 @@
+<StackLayout style="height: 100%; width: 100%">
+    <Button text="+" (tap)="addCurrentLocation()" class="addLocationButton"></Button>
+
+    <ListView [items]="locations" class="list-group" style="height: 100%" *ngIf="locations && locations.length > 0">
+        <ng-template let-position="item" let-i="index">
+            <StackLayout orientation="horizontal" class="list-group-item">
+                <Label [text]="'Lat: ' + (position.coords.latitude | number:'1.4-4') + ' '"></Label>
+                <Label [text]="'Long: ' + (position.coords.longitude | number:'1.4-4') + ' '"></Label>
+                <Label [text]="'(' + (position.timestamp | date: 'd/M/yyyy, hh:mm') + ') '"></Label>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+</StackLayout>

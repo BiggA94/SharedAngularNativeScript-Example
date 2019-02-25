@@ -1,0 +1,9 @@
+<!--<Button text="login works!" class="btn btn-primary"></Button>-->
+
+<StackLayout class="p-20">
+    <Label text="Welcome to NativeScript" class="h1 text-center" textWrap="true"></Label>
+    <TextField class="formComponent" hint="Username" (textChange)="usernameChanged($event)" [text]="username"></TextField>
+    <TextField class="formComponent" hint="Password" (textChange)="passwordChanged($event)" [text]="password"></TextField>
+    <Button class="formComponent" (tap)="logIn()" text="Login"></Button>
+    <Button (touch)="username='test'; password='pass'; logIn()" text="QuickLogin (DEBUG)"></Button>
+</StackLayout>

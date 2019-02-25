@@ -1,0 +1,9 @@
+<div style="height: 100%">
+    <ul class="positions" style="height: 100%;">
+        <li *ngFor="let position of locations">
+            <span class="position">Lat: {{(position.coords.latitude | number:'1.4-4')}} Long: {{(position.coords.longitude | number:'1.4-4')}} ({{(position.timestamp | date: 'd/M/yyyy, hh:mm')}})</span>
+        </li>
+    </ul>
+    <button type="button"  class="addLocationButton" (click)="addCurrentLocation()"><span class="addLocationButtonIcon">+</span></button>
+</div>
+

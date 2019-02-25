@@ -1,8 +1,4 @@
- 
-@import '~nativescript-theme-core/css/core.light.css';
-
-
-.formComponent {
+.nav-element {
     background-color: aliceblue;
     padding: 20px;
     margin: 20px;

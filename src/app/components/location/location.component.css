@@ -1,0 +1,24 @@
+.addLocationButton {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+    background-color: orangered;
+    font-color: white;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+    /*align-self: flex-end;*/
+
+    horizontal-align: right;
+    vertical-align: bottom;
+}
+
+.addLocationButton > .addLocationButtonIcon {
+    font-size: 50px;
+    color: white;
+}
