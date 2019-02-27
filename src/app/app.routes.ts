@@ -1,6 +1,5 @@
 import {Routes} from '@angular/router';
 
-import {HomeComponent} from './components/home/home.component';
 import {LoginComponent} from './components/login/login.component';
 import {AuthGuard} from './guards/auth.guard';
 import {NavigatorComponent} from './components/navigator/navigator.component';
@@ -28,12 +27,6 @@ export const routes: Routes = [
     {
         path: 'location',
         component: LocationComponent,
-        canActivate: [AuthGuard],
-        canLoad: [AuthGuard],
-    },
-    {
-        path: 'home',
-        component: HomeComponent,
         canActivate: [AuthGuard],
         canLoad: [AuthGuard],
     },
